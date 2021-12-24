@@ -11,55 +11,29 @@
 <body>
     <div class="container col-4">
         <form class="bg-dark mx-auto text-center text-light m-3 p-5 rounded" action="/process" method="post">
-            <div class="form-group mx-auto">
-                <div class="mb-3 text-left pb-5">
-                    <h1 class="text-warning pb-3">Dojo Survey</h1>
-                    <label for="name" class="form-label text-warning">Name:</label>
-                    <input type="text" class="form-control" name="name" id="" aria-describedby="helpId" placeholder="">
-                    <label for="dojo_location" class="form-label pt-3 text-warning">Dojo Location:</label>
-                    <select class="form-select" name="dojo_location" id="">
-                        <option selected></option>
-                        <option value="">Chicago</option>
-                        <option value="">Seatle</option>
-                        <option value="">Burbank</option>
-                        <option value="">Bellvue</option>
-                        <option value="">Online</option>
-                    </select>
-                    <label for="favorite_language" class="form-label pt-3 text-warning">Favorite Language:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="favorite_language" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            HTML
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="favorite_language" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            CSS
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="favorite_language" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            JavaScript
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="favorite_language" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Python
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="favorite_language" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            C#
-                        </label>
-                    </div>
-                    <label for="comments" class="form-label pt-3 text-warning">Comments (optional):</label>
-                    <textarea class="form-control" name="comments" id="" rows="5"></textarea>
-                    <input type='submit' value='Submit' class="btn btn-warning mt-4 float-right">
-                </div>
+            <div class="form-group mx-auto mb-3 text-left pb-5">
+                <h1 class="text-warning pb-3">Dojo Survey</h1>
+                <label for="name" class="form-label text-warning">Name:</label>
+                <input type="text" class="form-control" name="name" id="" aria-describedby="helpId" placeholder="">
+                <label for="dojo_location" class="form-label pt-3 text-warning">Dojo Location:</label>
+                <select class="form-select" name="dojo_location" id="">
+                    <option selected></option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seatle">Seatle</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Bellevue">Bellevue</option>
+                    <option value="Online">Online</option>
+                </select>
+                <label for="favorite_language" class="form-label pt-3 text-warning">Favorite Language:</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="HTML"> HTML</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="CSS"> CSS</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="Javascript"> JavaScript</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="Python"> Python</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="C#"> C#</label><br>
+                <label for="comments" class="form-label pt-3 text-warning">Comments (optional):</label>
+                <textarea class="form-control" name="comments" id="" rows="5"></textarea>
+                <label class="form-check-label pt-3"><input type="checkbox" class="form-check-input" name="email_list" value="email_list" checked> Yes, I would like to receive email updates!</label>
+                <input type='submit' value='Submit' class="btn btn-warning mt-4 float-right">
             </div>
         </form>
     </div>

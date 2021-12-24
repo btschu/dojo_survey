@@ -10,11 +10,16 @@
 </head>
 <body>
     <div class="container col-4 bg-dark rounded m-3 p-5 mx-auto">
-        <h1 class="text-warning">Thank you!</h1>
-        <h3 class="text-light ml-4"><span class="text-warning">Name: </span>{{ session['name'] }}</h3>
-        <h3 class="text-light ml-4"><span class="text-warning">Dojo Location: </span>{{ session['dojo_location'] }}</h3>
-        <h3 class="text-light ml-4"><span class="text-warning">Favorite Language: </span>{{ session['favorite_language'] }}</h3>
-        <h3 class="text-light ml-4"><span class="text-warning">Comments: </span>{{ session['comments'] }}</h3>
+        <h1 class="text-warning mb-4">Thank you!</h1>
+        <h4 class="text-light ml-4"><span class="text-warning">Name: </span>{{ session['name'] }}</h4>
+        <h4 class="text-light ml-4"><span class="text-warning">Dojo Location: </span>{{ session['dojo_location'] }}</h4>
+        <h4 class="text-light ml-4"><span class="text-warning">Favorite Language: </span>{{ session['favorite_language'] }}</h4>
+        <h4 class="text-light ml-4"><span class="text-warning">Comments: </span>{{ session['comments'] }}</h4>
+        {% if email_list == checked %}
+        <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'Yes' }}</h4>
+        {% elif email_list != checked %}
+        <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'No' }}</h4>
+        {% endif %}
         <a href="http://localhost:5000" class="btn btn-warning mt-4">Go Back</a>
     </div>
 </body>

@@ -13,6 +13,7 @@ def process():
     session['dojo_location'] = request.form['dojo_location']
     session['favorite_language'] = request.form['favorite_language']
     session['comments'] = request.form['comments']
+    session['email_list']= request.form['email_list']
     return redirect('/results')
 
 @app.route('/results')
