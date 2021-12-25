@@ -16,9 +16,9 @@
         <h4 class="text-light ml-4"><span class="text-warning">Favorite Language: </span>{{ session['favorite_language'] }}</h4>
         <h4 class="text-light ml-4"><span class="text-warning">Comments: </span>{{ session['comments'] }}</h4>
         {% if email_list == checked %}
-        <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'Yes' }}</h4>
-        {% elif email_list != checked %}
-        <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'No' }}</h4>
+            <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'Yes' }}</h4>
+        {% else %}
+            pass
         {% endif %}
         <a href="http://localhost:5000" class="btn btn-warning mt-4">Go Back</a>
     </div>
