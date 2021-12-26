@@ -15,10 +15,10 @@
         <h4 class="text-light ml-4"><span class="text-warning">Dojo Location: </span>{{ session['dojo_location'] }}</h4>
         <h4 class="text-light ml-4"><span class="text-warning">Favorite Language: </span>{{ session['favorite_language'] }}</h4>
         <h4 class="text-light ml-4"><span class="text-warning">Comments: </span>{{ session['comments'] }}</h4>
-        {% if email_list == checked %}
+        {% if session['email_list'] == 'email_list' %}
             <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'Yes' }}</h4>
         {% else %}
-            pass
+            <h4 class="text-light ml-4"><span class="text-warning">Email List: </span>{{ 'No' }}</h4>
         {% endif %}
         <a href="http://localhost:5000" class="btn btn-warning mt-4">Go Back</a>
     </div>

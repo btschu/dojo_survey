@@ -14,9 +14,9 @@
             <div class="form-group mx-auto mb-3 text-left pb-5">
                 <h1 class="text-warning pb-3">Dojo Survey</h1>
                 <label for="name" class="form-label text-warning">Name:</label>
-                <input type="text" class="form-control" name="name" id="" aria-describedby="helpId" placeholder="">
+                <input type="text" class="form-control" name="name" aria-describedby="helpId" placeholder="">
                 <label for="dojo_location" class="form-label pt-3 text-warning">Dojo Location:</label>
-                <select class="form-select" name="dojo_location" id="">
+                <select class="form-select" name="dojo_location">
                     <option selected></option>
                     <option value="Chicago">Chicago</option>
                     <option value="Seatle">Seatle</option>
@@ -33,7 +33,7 @@
                 <label for="comments" class="form-label pt-3 text-warning">Comments (optional):</label>
                 <textarea class="form-control" name="comments" id="" rows="5"></textarea>
                 <label class="form-check-label pt-3"><input type="checkbox" class="form-check-input" name="email_list" value="email_list" checked> Yes, I would like to receive email updates!</label>
-                <input type="hidden" class="form-check-input" name="email_list" value="email_list">
+                <!-- <input type="hidden" class="form-check-input" name="email_list_no" value="email_list_no" checked> -->
                 <input type='submit' value='Submit' class="btn btn-warning mt-4 float-right">
             </div>
         </form>
